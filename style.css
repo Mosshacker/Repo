@@ -1,0 +1,25 @@
+/* Basic styling for fullscreen canvas and spinner */
+
+body, html {
+  margin: 0; padding: 0; height: 100%; width: 100%; background: black;
+}
+canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+#spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin: -25px 0 0 -25px;
+  border: 5px solid rgba(255,255,255,0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
